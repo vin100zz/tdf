@@ -38,26 +38,34 @@ html {
   margin-left: 5px;
   vertical-align: middle;
 }
-#reglement {
-	position: absolute;
-	top: 18px;
-	right: 120px;
-	background: url(rules.png);
-	width: 32px;
-	height: 32px;
+#unes {
+  position: absolute;
+  top: 18px;
+  right: 60px;
+  background: url(unes.png);
+  width: 32px;
+  height: 32px;
 }
 #history {
   position: absolute;
   top: 18px;
-  right: 60px;
+  right: 120px;
   background: url(cup.png);
   width: 33px;
+  height: 32px;
+}
+#reglement {
+  position: absolute;
+  top: 18px;
+  right: 180px;
+  background: url(rules.png);
+  width: 32px;
   height: 32px;
 }
 #chat {
   position: absolute;
   top: 18px;
-  right: 180px;
+  right: 240px;
   background: url(chat.png);
   width: 37px;
   height: 32px;
@@ -235,7 +243,7 @@ html {
   margin: auto;
   min-width: 790px;
   padding: 40px;
-  background: linear-gradient(45deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 100%);;
+  background: linear-gradient(45deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 100%);
 }
 #score-container li.column {
 	display: inline-block;
