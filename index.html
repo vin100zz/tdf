@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <title>Pronos du Tour de France</title>
+
+  <link href="style/reset.css" rel="stylesheet" type="text/css"></link>
+  <link href="style/style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+  <script src="js/utils/iframeLoader.js"></script>
+  
+  <iframe src="templates/menu.html" onload="iframeloader.onLoad(event)" data-iframe-loader="display"></iframe>
+  <iframe src="templates/score.html" onload="iframeloader.onLoad(event)" data-iframe-loader="display"></iframe>
+
+  <script src="js/utils/template.js"></script>
+  <script src="js/utils/dom.js"></script>
+  
+  <script src="pronos.js?ts=123"></script>
+  
+  <script src="js/model/rules.js"></script>
+  <script src="js/model/classementGeneralGetter.js"></script>
+  <script src="js/model/chat.js"></script>
+  <script src="js/model/scoreCalculator.js"></script>
+   
+  <script src="js/controllers/chat.js"></script>
+  <script src="js/controllers/ranking.js"></script>
+  <script src="js/controllers/score.js"></script>
+    
+  <script src="js/main.js"></script>
+</body>
+</html>

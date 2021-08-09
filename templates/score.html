@@ -1,0 +1,92 @@
+<div id="score-container">
+  
+  <ul></ul>
+
+</div>
+
+<script type="text/template" id="header-template">
+  <li class="column header">
+    <ul>
+      <li>&nbsp;</li>
+    </ul>
+    <ul class="pronos">
+      <li class='cycliste'>1.</li>
+      <li class='cycliste'>2.</li>
+      <li class='cycliste'>3.</li>
+      <li class='cycliste'>4.</li>
+      <li class='cycliste'>5.</li>
+      <li class='cycliste'>6.</li>
+      <li class='cycliste'>7.</li>
+      <li class='cycliste'>8.</li>
+      <li class='cycliste'>9.</li>
+      <li class='cycliste'>10.</li>
+    </ul>
+    <ul class="ensemble">
+      <li>Ont fini</li>
+      <li>Top 50</li>
+      <li>Top 25</li>
+      <li>Top 10</li>
+      <li class='sous-total'>
+        <a href='javascript:void(0)' class='tooltip'>
+          <div class='title'>Sous-Total 1</div>
+          <div class="help">Sous-Total 1 = somme des points du classement d'ensemble &#215;10</div>
+        </a>
+      </li>
+    </ul>
+    <ul class="precision">
+      <li>1.</li>
+      <li>2.</li>
+      <li>3.</li>
+      <li>4.</li>
+      <li>5.</li>
+      <li>6.</li>
+      <li>7.</li>
+      <li>8.</li>
+      <li>9.</li>
+      <li>10.</li>
+      <li class='sous-total'>
+        <a href='javascript:void(0)' class='tooltip'>
+          <div class='title'>Sous-Total 2</div>
+          <div class="help">Sous-Total 2 = somme des points du tir de précision &#215;5</div>
+        </a>
+      </li>
+    </ul>
+    <ul class="bonus">
+      <li class='sous-total'>
+        <a href='javascript:void(0)' class='tooltip'>
+          <div class='title'>Super Prime</div>
+          <div class="help">le premier = 20 pts, les 2 premiers = 50 pts, les 3 premiers = 100 pts etc.</div>
+        </a>
+      </li>
+    </ul>
+    <ul class="total">
+      <li>Total</li>
+      <li>Rang</li>
+    </ul>
+  </li>
+</script>
+
+<script type="text/template" id="joueur-template">
+  <li class="column joueur">
+    <ul class="name">
+      <li>{{name}}</li>
+    </ul>
+    <ul class="pronos"></ul>
+    <ul class="ensemble"></ul>
+    <ul class="precision"></ul>
+    <ul class="bonus"></ul>
+    <ul class="total"></ul>
+  </li>
+</script>
+
+<script type="text/template" id="cycliste-template">
+  <li class='cycliste'><a href='{{link}}'>{{cycliste}} <span class='pos'>{{position}}</span></a></li>
+</script>
+
+<script type="text/template" id="unclassed-cycliste-template">
+  <li class='cycliste unclassed'><a href='{{link}}'>{{cycliste}} <span class='pos'>ab.</span></a></li>
+</script>
+
+<script type="text/template" id="points-template">
+  <li class='{{class}}'>{{points}}</li>
+</script>

@@ -1,0 +1,72 @@
+<div id="menu-container">
+
+  <div id="title">Pronos du Tour de France 2020</div>
+  
+  <a id="reglement" class="tooltip under" href="doc/reglement.jpg" target="_blank">
+    <div class="help">Règlement</div>
+  </a>
+  
+  <a id="ranking" class="tooltip right">
+    <div class="help">
+      <ul></ul>
+    </div>
+  </a>
+  
+  <div id="history" class="submenu">
+    <div class="submenu-container">
+	    <ul>
+	      <li><a href="doc/archives1.jpg" target="_blank">Historique 1973-88</a></li>
+	      <li><a href="doc/archives2.jpg" target="_blank">Historique 1989-93 et 1997-98</a></li>
+	      <li><a href="doc/archives3.jpg" target="_blank">Historique 1993-2010</a></li>
+	      <li><a href="doc/tdf2000.jpg" target="_blank">Pronos 2000</a></li>
+	      <li><a href="doc/tdf2007.jpg" target="_blank">Pronos 2007</a></li>
+	      <li><a href="doc/tdf2008.jpg" target="_blank">Pronos 2008</a></li>
+	      <li><a href="doc/tdf2009.jpg" target="_blank">Pronos 2009</a></li>
+	      <li><a href="doc/tdf2010.jpg" target="_blank">Pronos 2010</a></li>
+	      <li><a href="doc/tdf2011.jpg" target="_blank">Pronos 2011</a></li>
+	      <li><a href="doc/tdf2012.jpg" target="_blank">Pronos 2012</a></li>
+	      <li><a href="doc/tdf2013.jpg" target="_blank">Pronos 2013</a></li>
+        <li><a href="doc/tdf2014.jpg" target="_blank">Pronos 2014</a></li>
+        <li><a href="doc/tdf2015.jpg" target="_blank">Pronos 2015</a></li>
+        <li><a href="doc/tdf2016.jpg" target="_blank">Pronos 2016</a></li>
+        <li><a href="doc/tdf2017.jpg" target="_blank">Pronos 2017</a></li>
+        <li><a href="doc/tdf2019.jpg" target="_blank">Pronos 2019</a></li>
+	    </ul>
+    </div>
+  </div>
+  
+  <div id="chat" class="submenu">
+    <div class="submenu-container">
+      <div class="container">
+        <form onsubmit="return false;">
+          <div class="title">Laisser un commentaire :</div>
+          <input name="user" type="text" maxlength="100" placeholder="Votre nom ici" required="required" />
+          <textarea name="comm" rows="4" maxlength="1000" placeholder="Votre commentaire ici" required="required"></textarea>
+          <input type="submit" value="Envoyer !" />
+        </form>
+        <hr/>
+	      <div id="chat-posts">
+	        <ul></ul>
+	      </div>
+	    </div>
+    </div>
+  </div>
+  
+  <div id="pronostics" class="clickable"></div>
+  <div id="tdf" class="clickable"></div>
+
+</div>
+
+<script type="text/template" id="rank-template">
+  <li>
+    <div><span>{{position}}.</span><span>{{nom}}</span><span>{{score}} pts</span></div>
+  </li>
+</script>
+
+<script type="text/template" id="chat-post-template">
+  <li>
+    <div class="meta"><span>{{datetime}}</span><span>{{nom}}</span></div>
+    <div>{{commentaire}}</div>
+  </li>
+</script>
+
