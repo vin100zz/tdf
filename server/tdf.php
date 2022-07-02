@@ -1,6 +1,6 @@
 ﻿<?php
 
-$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2021/general.json";
+$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2022/general.json";
 $json = file_get_contents($url);
 $json = json_decode($json, true);
 
