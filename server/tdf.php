@@ -13,7 +13,7 @@ foreach($json["items"][0]["objet"]["items"] as $cyclist) {
 
   $nom = strtoupper($cyclist["person"]["nom"]);
 
-  if ($nom == "MARTIN" || $nom == "N. QUINTANA") { // preg_match("/MARTIN/", $nom) || preg_match("/YATES/", $nom)) {
+  if ($nom == "MARTIN" || $nom == "N. QUINTANA" || $nom == "THOMAS") { // preg_match("/MARTIN/", $nom) || preg_match("/YATES/", $nom)) {
     $nom = strtoupper($cyclist["person"]["nom_abrege"]);
   }
   if ($nom == "DéMARE") {
