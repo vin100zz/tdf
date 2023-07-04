@@ -1,6 +1,6 @@
 ﻿<?php
 
-$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2022/general.json";
+$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2023/general.json";
 $json = file_get_contents($url);
 $json = json_decode($json, true);
 
@@ -13,12 +13,14 @@ foreach($json["items"][0]["objet"]["items"] as $cyclist) {
 
   $nom = strtoupper($cyclist["person"]["nom"]);
 
-  if ($nom == "MARTIN" || $nom == "N. QUINTANA" || $nom == "THOMAS") { // preg_match("/MARTIN/", $nom) || preg_match("/YATES/", $nom)) {
+  if ($nom == "MARTIN" || $nom == "N. QUINTANA" || $nom == "THOMAS" || preg_match("/YATES/", $nom)) {
     $nom = strtoupper($cyclist["person"]["nom_abrege"]);
   }
   if ($nom == "DéMARE") {
     $nom = "DÉMARE";
   }
+
+  //print_r('nom' . $nom);
 
   $classement[] = array("name" => $nom, "position" => $pos, "link" => $cyclist["person"]["url_fiche"]);
 }

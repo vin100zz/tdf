@@ -1,18 +1,18 @@
 ﻿var pronos = [
   {
     name: "René 1",
-    cyclistes: ["POGACAR", "ROGLIC", "VINGEGAARD", "G. THOMAS", "VLASOV", "GAUDU", "YATES", "MEINTJES", "MAS", "QUINTANA"]
+    cyclistes: ["VINGEGAARD", "POGACAR", "A. YATES", "BARDET", "CARAPAZ", "HINDLEY", "CICCONE", "O'CONNOR", "G. MARTIN", "ALAPHILIPPE"]
   }, {
     name: "Évelyne",
-    cyclistes: ["POGACAR", "VLASOV", "VINGEGAARD", "ROGLIC", "URAN", "VAN DER POEL", "BARDET", "G. THOMAS", "HAIG", "O'CONNOR"]
+    cyclistes: ["POGACAR", "VINGEGAARD", "SAGAN", "CARAPAZ", "EWAN", "CAVENDISH", "PINOT", "S. YATES", "ALAPHILIPPE", "VAN DER POEL"]
   }, {
     name: "René 2",
-    cyclistes: ["VINGEGAARD", "POGACAR", "ROGLIC", "O'CONNOR", "G. THOMAS", "MAS", "HAIG", "VLASOV", "MEINTJES", "GAUDU"]
+    cyclistes: ["POGACAR", "VINGEGAARD", "HINDLEY", "A. YATES", "HAIG", "MADOUAS", "O'CONNOR", "LANDA", "GAUDU", "MEINTJES"]
   }, {
     name: "Thierry",
-    cyclistes: ["POGACAR", "ROGLIC", "VINGEGAARD", "O'CONNOR", "VLASOV", "MAS", "MARTINEZ", "YATES", "QUINTANA", "GAUDU"]
+    cyclistes: ["POGACAR", "VINGEGAARD", "BERNAL", "A. YATES", "MEINTJES", "CARAPAZ", "BARDET", "SANCHEZ", "LANDA", "GAUDU"]
   }, {
     name: "Vincent",
-    cyclistes: ["POGACAR", "ROGLIC", "VINGEGAARD", "O'CONNOR", "MAS", "MARTINEZ", "G. THOMAS", "CARUSO", "VLASOV", "GAUDU"]
+    cyclistes: ["VINGEGAARD", "POGACAR", "O'CONNOR", "A. YATES", "MAS", "GAUDU", "BARDET", "CARAPAZ", "MEINTJES", "HINDLEY"]
   }
 ];
