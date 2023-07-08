@@ -9,6 +9,9 @@
     name: "René 2",
     cyclistes: ["POGACAR", "VINGEGAARD", "HINDLEY", "A. YATES", "HAIG", "MADOUAS", "O'CONNOR", "LANDA", "GAUDU", "MEINTJES"]
   }, {
+    name: "Hélène",
+    cyclistes: ["POGACAR", "VINGEGAARD", "JAKOBSEN", "SIMMONS", "ALAPHILIPPE", "S. YATES", "BARDET", "PINOT", "POELS", "HOULE"]
+  }, {
     name: "Thierry",
     cyclistes: ["POGACAR", "VINGEGAARD", "BERNAL", "A. YATES", "MEINTJES", "CARAPAZ", "BARDET", "SANCHEZ", "LANDA", "GAUDU"]
   }, {
