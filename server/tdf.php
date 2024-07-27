@@ -1,6 +1,6 @@
 ﻿<?php
 
-$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2023/general.json";
+$url = "https://iphdata.lequipe.fr/iPhoneDatas/EFR/STD/ALL/V1/Cyclisme-sur-route/Ranking/Competition/tour-de-france/annee-2024/general.json";
 $json = file_get_contents($url);
 $json = json_decode($json, true);
 
@@ -19,6 +19,13 @@ foreach($json["items"][0]["objet"]["items"] as $cyclist) {
   if ($nom == "DéMARE") {
     $nom = "DÉMARE";
   }
+  if ($cyclist["person"]["nom_complet"] == "Carlos Rodriguez") {
+    $nom = "CA. RODRIGUEZ";
+  }
+  if ($cyclist["person"]["nom_complet"] == "Cristian Rodriguez") {
+    $nom = "CR. RODRIGUEZ";
+  }
+
 
   //print_r('nom' . $nom);
 
